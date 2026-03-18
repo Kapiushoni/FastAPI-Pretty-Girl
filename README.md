@@ -16,3 +16,6 @@ You can view the live site here: **[https://fastapi-pretty-girl.onrender.com](ht
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
+2. Run the server:
+    ```bash
+   uvicorn main:app --reload
