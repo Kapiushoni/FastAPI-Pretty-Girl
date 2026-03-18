@@ -5,7 +5,7 @@ from fastapi.templating import Jinja2Templates
 app = FastAPI(title="Pretty Girl API")
 
 # Указываем папку с HTML файлом
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="template")
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
