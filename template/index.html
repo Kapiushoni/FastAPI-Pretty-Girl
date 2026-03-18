@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Признание для Pretty Girl</title>
+    <title>For Pretty Girl</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -33,9 +33,9 @@
         #compliment {
             margin-top: 25px;
             font-size: 20px;
-            color: #d81b60; /* Розовый цвет */
+            color: #d81b60; /* Pink */
             font-weight: bold;
-            min-height: 28px; /* Чтобы блок не прыгал */
+            min-height: 28px; /* for non-jump part */
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
         }
@@ -45,7 +45,7 @@
         }
 
         .magic-button {
-            background-color: #e91e63; /* Ярко-розовый */
+            background-color: #e91e63; /* light-pink */
             color: white;
             border: none;
             padding: 12px 24px;
@@ -67,8 +67,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Для самой прекрасной</h1>
-        <button class="magic-button" onclick="showCompliment()">Нажми на меня ✨</button>
+        <h1>For the best girl</h1>
+        <button class="magic-button" onclick="showCompliment()">Press me ✨</button>
         <div id="compliment"></div>
     </div>
 
@@ -78,9 +78,9 @@
             complimentDiv.textContent = "You are a pretty girl)))";
             complimentDiv.classList.add('compliment-visible');
 
-            // Немного магии: кнопка меняет текст после нажатия
+            // after button press
             const button = document.querySelector('.magic-button');
-            button.textContent = "Это правда! ❤️";
+            button.textContent = "Its True! ❤️";
         }
     </script>
 </body>
