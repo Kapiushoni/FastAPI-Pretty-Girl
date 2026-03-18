@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Признание для Pretty Girl</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        #compliment {
+            margin-top: 25px;
+            font-size: 20px;
+            color: #d81b60; /* Розовый цвет */
+            font-weight: bold;
+            min-height: 28px; /* Чтобы блок не прыгал */
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .compliment-visible {
+            opacity: 1 !important;
+        }
+
+        .magic-button {
+            background-color: #e91e63; /* Ярко-розовый */
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .magic-button:hover {
+            background-color: #d81b60;
+        }
+
+        .magic-button:active {
+            transform: scale(0.97);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Для самой прекрасной</h1>
+        <button class="magic-button" onclick="showCompliment()">Нажми на меня ✨</button>
+        <div id="compliment"></div>
+    </div>
+
+    <script>
+        function showCompliment() {
+            const complimentDiv = document.getElementById('compliment');
+            complimentDiv.textContent = "You are a pretty girl)))";
+            complimentDiv.classList.add('compliment-visible');
+
+            // Немного магии: кнопка меняет текст после нажатия
+            const button = document.querySelector('.magic-button');
+            button.textContent = "Это правда! ❤️";
+        }
+    </script>
+</body>
+</html>
